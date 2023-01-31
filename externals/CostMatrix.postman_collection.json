@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "de4f120b-d63f-466c-a193-25b99f24873c",
+		"name": "CostMatrix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateCostMatrix",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\":\"OTHER\",\r\n    \"cost\":18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/cost-matrix",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cost-matrix"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Matrix cost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\":\"ES\",\r\n    \"cost\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/cost-matrix/4c43a4a6-23f9-46bd-a754-3669cb4439ad",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cost-matrix",
+						"4c43a4a6-23f9-46bd-a754-3669cb4439ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve Card clearing cost by card Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/card/457173606534643643634634/clearing-cost",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"card",
+						"457173606534643643634634",
+						"clearing-cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve All Matrix Costs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cost-matrix/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cost-matrix",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete CostMatrix",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cost-matrix/853c44c8-4b0c-4532-bb9a-e57e546674e5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cost-matrix",
+						"853c44c8-4b0c-4532-bb9a-e57e546674e5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
